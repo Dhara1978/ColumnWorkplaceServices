@@ -48,26 +48,26 @@ nav {
   margin: 0px;
 }
 
-nav a img {
+nav div a img {
   display: inline-block;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
-nav a h1 {
+nav div a h1 {
   display: inline-block;
   align-items: center;
-  margin: 0.5em;
-  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.0em;;
 }
 
-nav div:first-child {
+nav div div:first-child {
   display: flex;
   align-items: center;
 }
 
-nav div:last-child a {
+nav div div:last-child a {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
@@ -87,6 +87,17 @@ nav div:last-child a {
     color: #f4f4f4
 }
 
+/* Remove background image on screens smaller than 576px */
+@media (max-width: 900px) {
+  .bg-img {
+    background-image: none;
+    background-color: #24282b; 
+  }
+  .jumbotron-text {
+    text-align: center;
+  }  
+}
+
 .carousel {
     display: flex;
     padding: 20px;
@@ -98,6 +109,11 @@ nav div:last-child a {
 
 .card-xtra {
   margin: 2em;
+}
+
+.scroll-buttons {
+  margin: 1em;
+  text-align: center;
 }
 
 footer {
