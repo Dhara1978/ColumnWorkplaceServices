@@ -26,29 +26,39 @@
             <p class="inline">adamtormey@columnworkplacetraining.com</p>
         </address>
 
-        <!-- Image and text -->
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="images/column_logo.jpeg" class="d-inline-block align-top" alt="Column Workplace Sevices">
-                <h1>Column Workplace Training</h1>
-            </a>
-            <div>
-                <ul class="nav d-flex ms-auto">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/column_logo.jpeg" class="d-inline-block align-top me-2" alt="Column Workplace Services" width="40" height="40">
+                <h1 class="fs-5 fw-bold mb-0">Column Workplace Training</h1>
+                </a>
+
+                <!-- Burger button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Accredited Courses</a>
+                    <a class="nav-link" href="#">Accredited Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Children's First Aid Training</a>
+                    <a class="nav-link" href="#">Children's First Aid Training</a>
                     </li>
                 </ul>
+                </div>
             </div>
         </nav>
+
 
         <div class="jumbotron bg-img">
             <div class="jumbotron-text">
@@ -64,59 +74,91 @@
 
         <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                
                 <div class="carousel-item active">
-                    <div class="row row-xtra">
-
-                        <div class="card col-md-3 card-xtra">
-                        <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Course title 1</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-success">Go somewhere</a>
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card card-xtra h-100">
+                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Course title 1</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-success">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card col-md-3 card-xtra">
-                        <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Course title 2</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-success">Go somewhere</a>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card card-xtra h-100">
+                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Course title 2</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-success">Go somewhere</a>
+                                </div>
                             </div>
                         </div> 
 
-                        <div class="card col-md-3 card-xtra">
-                        <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Course title 3</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-success">Go somewhere</a>
-                            </div>
-                        </div>
-
-                        <div class="card col-md-3 card-xtra">
-                        <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Course title 4</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-success">Go somewhere</a>
-                            </div>
-                        </div>
-
-                        <div class="card col-md-3 card-xtra">
-                        <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Course title 5</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-success">Go somewhere</a>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card card-xtra h-100">
+                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Course title 3</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-success">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
 
                     </div>
-            
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card card-xtra h-100">
+                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Course title 4</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-success">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card card-xtra h-100">
+                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Course title 5</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-success">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card card-xtra h-100">
+                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Course title 6 (was 5, fixed for unique title)</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-success">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
+        </div>
+
+        <div class="scroll-buttons">
+            <button class="btn btn-success" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev"><</button>
+            <button class="btn btn-success" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">></button> 
         </div>
 
         <footer>
