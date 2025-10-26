@@ -84,7 +84,19 @@ nav div div:last-child a {
 
 .jumbotron-text {
     text-align: right;
-    color: #f4f4f4
+    color: #28A745;
+}
+
+.right-aligned-list {
+  direction: rtl;
+  text-align: right;
+  list-style-position: inside;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.right-aligned-list li {
+  color: #28A745;
 }
 
 /* Remove background image on screens smaller than 576px */
@@ -95,7 +107,15 @@ nav div div:last-child a {
   }
   .jumbotron-text {
     text-align: center;
+  }
+  .right-aligned-list {
+    direction: ltr;
+    text-align: left;
+    list-style-position: outside; /* Moves bullet outside the padding */
   }  
+  .right-aligned-list li {
+  padding-left: 1.2em; /* Increase this value for more space */
+  }
 }
 
 .carousel {
@@ -116,20 +136,51 @@ nav div div:last-child a {
   text-align: center;
 }
 
+section {
+  background-color: #e0e0e0; /* Light grey */
+  border-radius: 12px;       /* Rounded corners */
+  margin: 3em auto;          /* Medium vertical margin, auto centers horizontally */
+  padding: 2em;
+  max-width: 700px;          /* Keeps it readable on large screens */
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #24282b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Optional soft shadow */
+}
+
 footer {
   background-color: #28A745;
   color: #f4f4f4;
   margin: 0px;
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-footer div {
-  text-align: center;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 1em;
 }
 
-footer div img {
-  padding: 1em;
+.icons {
+  width: 40px;
 }
+
+.logo-right {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.faib {
+  width: 180px;
+}
+
 
 footer p {
   text-align: center;
