@@ -196,3 +196,22 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Styles for small screens (e.g., up to 768px wide) */
+@media (max-width: 768px) {
+  .logo-right {
+    /* 1. Remove absolute positioning to put it back in the normal flow */
+    position: static; 
+    
+    /* 2. Clear previous positioning values just to be safe */
+    top: auto;
+    right: auto;
+    
+    /* 3. Add some margin to separate it from the social icons above */
+    margin-bottom: 1em; 
+    
+    /* 4. Ensure the image inside it is centered (optional, but good practice) */
+    text-align: center;
+    width: 100%; /* Helps if it wasn't filling the width before */
+  }
+}
